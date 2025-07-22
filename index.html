@@ -1,316 +1,497 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta tags esenciales -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Gerson Aarón López Pérez</title>
+    <title>CV Gerson Aarón López Pérez - Gerente de Operaciones Retail</title>
+    
+    <!-- Frameworks y librerías externas -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Preconexiones para optimización de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos personalizada -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body class="min-h-screen">
-    <div class="container mx-auto max-w-6xl p-4 sm:p-8">
-        <!-- Main CV container -->
-        <div class="card-shadow rounded-2xl overflow-hidden bg-white">
-            <div class="md:flex">
-                <!-- Left Column (Dark Background) -->
-                <div class="md:w-1/3 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white p-8 relative">
-                    <div class="absolute inset-0 bg-black opacity-20"></div>
+<<body class="min-h-screen">
+    <!-- Contenedor principal del CV -->
+    <div class="container mx-auto max-w-7xl p-4 sm:p-8">
+        <!-- Tarjeta principal del CV con efectos modernos -->
+        <div class="card-shadow bg-white animate-fade-in">
+            <div class="lg:flex">
+                <!-- =======================================
+                     COLUMNA IZQUIERDA - INFORMACIÓN PERSONAL
+                     ======================================= -->
+                <div class="lg:w-1/3 left-column text-white p-8 relative">
                     <div class="relative z-10">
-                        <div class="flex flex-col items-center md:items-start">
-                            <!-- Profile Image -->
-                            <div class="w-36 h-36 rounded-full mb-6 border-4 border-white shadow-2xl overflow-hidden">
-                                <img src="assets/foto.png" alt="Foto de Gerson Aarón López Pérez" class="w-full h-full object-cover" />
+                        <!-- Sección de perfil personal -->
+                        <div class="flex flex-col items-center lg:items-start mb-8">
+                            <!-- Imagen de perfil con efectos modernos -->
+                            <div class="profile-image w-40 h-40 rounded-full mb-6 overflow-hidden">
+                                <img src="assets/foto.png" alt="Foto profesional de Gerson Aarón López Pérez" 
+                                     class="w-full h-full object-cover transition-transform duration-300" />
                             </div>
-                            <h1 class="text-3xl font-bold text-center md:text-left mb-2">GERSON AARÓN LÓPEZ PÉREZ</h1>
-                            <div class="bg-gradient-to-r from-cyan-400 to-blue-400 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                                Gerente de Operaciones Retail
+                            
+                            <!-- Nombre y título profesional -->
+                            <h1 class="text-3xl lg:text-4xl font-extrabold text-center lg:text-left mb-3 title-glow">
+                                GERSON AARÓN LÓPEZ PÉREZ
+                            </h1>
+                            <div class="modern-badge bg-gradient-to-r from-cyan-400 to-blue-500 text-gray-900 px-6 py-3 rounded-full text-base font-bold mb-6 shadow-lg">
+                                🏪 Gerente de Operaciones Retail
                             </div>
                         </div>
 
+                        <!-- Separador decorativo con animación -->
                         <div class="h-px bg-gradient-to-r from-transparent via-white to-transparent my-8"></div>
 
-                        <!-- Contact Section -->
-                        <div class="space-y-4">
-                            <h3 class="text-xl font-semibold text-cyan-400 uppercase tracking-wider mb-6 flex items-center">
-                                <span class="w-8 h-0.5 bg-cyan-400 mr-3"></span>
-                                Contacto
+                        <!-- =======================================
+                             SECCIÓN DE CONTACTO
+                             ======================================= -->
+                        <div class="space-y-4 mb-8">
+                            <h3 class="text-xl font-bold text-cyan-300 uppercase tracking-wider mb-6 flex items-center">
+                                <span class="w-8 h-0.5 bg-cyan-400 mr-3 rounded-full"></span>
+                                📞 Contacto
                             </h3>
-                            <div class="contact-item flex items-center space-x-3 p-3 rounded-lg">
-                                <div class="w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+                            
+                            <!-- Información de ubicación -->
+                            <div class="contact-item flex items-center space-x-4 p-4">
+                                <div class="icon-container w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                    </svg>
                                 </div>
-                                <span class="text-gray-200">Coatepeque, Quetzaltenango</span>
+                                <span class="text-gray-100 font-medium">📍 Coatepeque, Quetzaltenango</span>
                             </div>
-                            <div class="contact-item flex items-center space-x-3 p-3 rounded-lg">
-                                <div class="w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                            
+                            <!-- Información de teléfono -->
+                            <div class="contact-item flex items-center space-x-4 p-4">
+                                <div class="icon-container w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                    </svg>
                                 </div>
-                                <span class="text-gray-200">+502 5593 2562</span>
+                                <span class="text-gray-100 font-medium">📱 +502 5593 2562</span>
                             </div>
-                            <div class="contact-item flex items-center space-x-3 p-3 rounded-lg">
-                                <div class="w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                            
+                            <!-- Información de email -->
+                            <div class="contact-item flex items-center space-x-4 p-4">
+                                <div class="icon-container w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
                                 </div>
-                                <span class="text-gray-200 break-all">gersonlopezpaizhuehue@hotmail.com</span>
+                                <span class="text-gray-100 font-medium break-all">✉️ gersonlopezpaizhuehue@hotmail.com</span>
                             </div>
                         </div>
 
+                        <!-- Separador decorativo con animación -->
                         <div class="h-px bg-gradient-to-r from-transparent via-white to-transparent my-8"></div>
                         
-                        <!-- Skills Section -->
-                        <div>
-                            <h3 class="text-xl font-semibold text-cyan-400 uppercase tracking-wider mb-6 flex items-center">
-                                <span class="w-8 h-0.5 bg-cyan-400 mr-3"></span>
-                                Competencias Clave
+                        <!-- =======================================
+                             SECCIÓN DE COMPETENCIAS CLAVE
+                             ======================================= -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-cyan-300 uppercase tracking-wider mb-6 flex items-center">
+                                <span class="w-8 h-0.5 bg-cyan-400 mr-3 rounded-full"></span>
+                                🚀 Competencias Clave
                             </h3>
-                            <div class="grid grid-cols-1 gap-3">
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Gestión de P&L</div>
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Retail / ERP</div>
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Merchandising & Layout</div>
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Gestión de Inventarios</div>
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Análisis de Datos</div>
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Excel Avanzado</div>
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Liderazgo y Coaching</div>
-                                <div class="skill-badge text-white px-4 py-2 rounded-lg text-sm font-medium">Negociación con Proveedores</div>
+                            <div class="grid grid-cols-1 gap-4">
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">💰 Gestión de P&L</div>
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">🏪 Retail / ERP</div>
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">🛍️ Merchandising & Layout</div>
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">📦 Gestión de Inventarios</div>
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">📊 Análisis de Datos</div>
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">📈 Excel Avanzado</div>
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">👥 Liderazgo y Coaching</div>
+                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">🤝 Negociación con Proveedores</div>
                             </div>
 
-                            <!-- Fortalezas Section -->
-                            <h3 class="text-xl font-semibold text-cyan-400 uppercase tracking-wider mt-8 mb-4 flex items-center">
-                                <span class="w-8 h-0.5 bg-cyan-400 mr-3"></span>
-                                Fortalezas
+                            <!-- =======================================
+                                 SECCIÓN DE FORTALEZAS
+                                 ======================================= -->
+                            <h3 class="text-xl font-bold text-cyan-300 uppercase tracking-wider mt-10 mb-6 flex items-center">
+                                <span class="w-8 h-0.5 bg-cyan-400 mr-3 rounded-full"></span>
+                                💪 Fortalezas
                             </h3>
-                            <ul class="list-disc list-inside text-white text-base space-y-1">
-                                <li>Servicio al cliente</li>
-                                <li>Cumplimiento de KPIs</li>
-                                <li>Cultura organizacional y valores</li>
-                                <li>Puntualidad y disponibilidad</li>
-                            </ul>
+                            <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-filter backdrop-blur-lg border border-white border-opacity-20">
+                                <ul class="space-y-3 text-white text-base">
+                                    <li class="flex items-center space-x-3">
+                                        <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                                        <span>🌟 Servicio al cliente excepcional</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                                        <span>🎯 Cumplimiento consistente de KPIs</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                                        <span>🏢 Cultura organizacional y valores sólidos</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+                                        <span>⏰ Puntualidad y disponibilidad total</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         
+                        <!-- Separador decorativo con animación -->
                         <div class="h-px bg-gradient-to-r from-transparent via-white to-transparent my-8"></div>
 
-                        <!-- Languages Section -->
+                        <!-- =======================================
+                             SECCIÓN DE IDIOMAS
+                             ======================================= -->
                         <div>
-                            <h3 class="text-xl font-semibold text-cyan-400 uppercase tracking-wider mb-6 flex items-center">
-                                <span class="w-8 h-0.5 bg-cyan-400 mr-3"></span>
-                                Idiomas
+                            <h3 class="text-xl font-bold text-cyan-300 uppercase tracking-wider mb-6 flex items-center">
+                                <span class="w-8 h-0.5 bg-cyan-400 mr-3 rounded-full"></span>
+                                🌍 Idiomas
                             </h3>
-                            <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                                <p class="text-gray-200 font-medium">Español (Nativo)</p>
+                            <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-filter backdrop-blur-lg border border-white border-opacity-20">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-2xl">🇬🇹</span>
+                                    <div>
+                                        <p class="text-white font-bold text-lg">Español</p>
+                                        <p class="text-cyan-300 text-sm">Nativo / Profesional</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Column (White Background) -->
-                <div class="md:w-2/3 p-8 bg-white">
-                    <!-- Executive Summary Section -->
-                    <div class="print-break-inside-avoid section-card rounded-xl p-6 mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="w-2 h-8 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
-                            <h3 class="text-2xl font-bold gradient-text">Resumen Ejecutivo</h3>
-                        </div>
-                        <div class="section-divider mb-4"></div>
-                        <p class="text-gray-700 leading-relaxed text-lg">
-                            Profesional del sector retail con 22 años de experiencia gestionando tiendas de los formatos Walmart (Paiz y Despensa Familiar) y GTA (Super del barrio y supermercados Suma). Experto en apertura de puntos de venta, liderazgo de equipos de hasta 120 personas, control de P&L y mejora continua. Ha logrado incrementos de utilidad neta superiores al 12% anual y reducción de merma del 18% mediante análisis de inventario y capacitación de personal.
-                        </p>
-                    </div>
-
-                    <!-- Professional Experience Section -->
-                    <div class="print-break-inside-avoid section-card rounded-xl p-6 mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="w-2 h-8 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
-                            <h3 class="text-2xl font-bold gradient-text">Experiencia Profesional</h3>
+                <!-- =======================================
+                     COLUMNA DERECHA - CONTENIDO PRINCIPAL
+                     ======================================= -->
+                <div class="lg:w-2/3 p-8 lg:p-10 bg-gradient-to-br from-gray-50 to-white">
+                    <!-- =======================================
+                         SECCIÓN DE RESUMEN EJECUTIVO
+                         ======================================= -->
+                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-blue-500">
+                        <div class="flex items-center mb-6">
+                            <div class="w-3 h-10 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full mr-4"></div>
+                            <h3 class="text-3xl font-extrabold gradient-text">📋 Resumen Ejecutivo</h3>
                         </div>
                         <div class="section-divider mb-6"></div>
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border-l-4 border-blue-400">
+                            <p class="text-gray-700 leading-relaxed text-lg font-medium">
+                                <span class="font-bold text-blue-600">💼 Profesional del sector retail</span> con <span class="font-bold text-purple-600">22 años de experiencia</span> 
+                                gestionando tiendas de los formatos <span class="font-semibold">Walmart (Paiz y Despensa Familiar)</span> y <span class="font-semibold">GTA (Super del barrio y supermercados Suma)</span>. 
+                                <span class="font-bold text-green-600">🎯 Experto en apertura de puntos de venta</span>, liderazgo de equipos de hasta <span class="font-bold">120 personas</span>, 
+                                control de P&L y mejora continua. Ha logrado <span class="font-bold text-emerald-600">incrementos de utilidad neta superiores al 12% anual</span> 
+                                y <span class="font-bold text-orange-600">reducción de merma del 18%</span> mediante análisis de inventario y capacitación de personal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- =======================================
+                         SECCIÓN DE EXPERIENCIA PROFESIONAL
+                         ======================================= -->
+                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-purple-500">
+                        <div class="flex items-center mb-6">
+                            <div class="w-3 h-10 bg-gradient-to-b from-purple-500 to-pink-600 rounded-full mr-4"></div>
+                            <h3 class="text-3xl font-extrabold gradient-text">💼 Experiencia Profesional</h3>
+                        </div>
+                        <div class="section-divider mb-8"></div>
                         <div class="space-y-8">
-                            <!-- Job 1 -->
-                            <div class="bg-gradient-to-r from-gray-50 to-white rounded-xl p-6 border-l-4 border-cyan-400 shadow-sm">
-                                <div class="flex justify-between items-baseline mb-2">
-                                    <h4 class="text-xl font-semibold text-gray-800">Sub-Gerente</h4>
-                                    <span class="bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">2020 - 2024</span>
+                            <!-- Trabajo 1 - GTA -->
+                            <div class="job-card bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 border-l-4 border-cyan-500 shadow-lg">
+                                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4">
+                                    <h4 class="text-2xl font-bold text-gray-800 mb-2 lg:mb-0">🏢 Sub-Gerente</h4>
+                                    <span class="modern-badge bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                        📅 2020 - 2024
+                                    </span>
                                 </div>
-                                <p class="text-lg text-gray-600 font-medium mb-4">GTA (supermercados Suma y super del barrio)</p>
-                                <ul class="space-y-3 text-gray-700">
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Aperturé la tienda SDB San Francisco Coatepeque alcanzando ventas de Q 2 M en el primer trimestre (8% sobre meta).</span>
+                                <p class="text-xl text-blue-600 font-bold mb-6">🏪 GTA (supermercados Suma y super del barrio)</p>
+                                <ul class="space-y-4 text-gray-700">
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-green-600">🎯 Aperturé la tienda SDB San Francisco Coatepeque</span> alcanzando ventas de <span class="font-bold">Q 2M en el primer trimestre</span> (<span class="text-green-600 font-bold">8% sobre meta</span>).</span>
                                     </li>
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Aperturé Suma Huehuetenango superando los presupuestos de venta arriba del 15% mensual sobre el Ppt. Durante 2 años consecutivos. Alcanzando ventas de más de Q 15 M mensual</span>
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-blue-600">🏗️ Aperturé Suma Huehuetenango</span> superando los presupuestos de venta <span class="font-bold text-green-600">arriba del 15% mensual</span> durante <span class="font-bold">2 años consecutivos</span>. Alcanzando ventas de más de <span class="font-bold">Q 15M mensual</span>.</span>
                                     </li>
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Aperturé Suma Coatepeque, logrando ventas mensuales de Q 10 millones y superando el presupuesto en un 10%.</span>
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-purple-600">🚀 Aperturé Suma Coatepeque</span>, logrando ventas mensuales de <span class="font-bold">Q 10 millones</span> y superando el presupuesto en un <span class="font-bold text-green-600">10%</span>.</span>
                                     </li>
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Reduje merma total en 18% mediante implementación de sistema PEPS y capacitaciones mensuales.</span>
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-orange-600">📉 Reduje merma total en 18%</span> mediante implementación de <span class="font-bold">sistema PEPS</span> y capacitaciones mensuales.</span>
                                     </li>
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Coordiné equipo de 80 colaboradores, bajando la rotación de 15% a 6% anual.</span>
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-indigo-600">👥 Coordiné equipo de 80 colaboradores</span>, bajando la rotación de <span class="text-red-500 font-bold">15% a 6% anual</span>.</span>
                                     </li>
                                 </ul>
                             </div>
-                            <!-- Job 2 -->
-                            <div class="bg-gradient-to-r from-gray-50 to-white rounded-xl p-6 border-l-4 border-blue-400 shadow-sm">
-                                <div class="flex justify-between items-baseline mb-2">
-                                    <h4 class="text-xl font-semibold text-gray-800">Administrador de Tienda</h4>
-                                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">2000 - 2019</span>
+                            
+                            <!-- Trabajo 2 - Walmart -->
+                            <div class="job-card bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border-l-4 border-purple-500 shadow-lg">
+                                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4">
+                                    <h4 class="text-2xl font-bold text-gray-800 mb-2 lg:mb-0">🏢 Administrador de Tienda</h4>
+                                    <span class="modern-badge bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                        📅 2000 - 2019
+                                    </span>
                                 </div>
-                                <p class="text-lg text-gray-600 font-medium mb-4">Walmart (Paiz y Despensa Familiar)</p>
-                                <ul class="space-y-3 text-gray-700">
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Gestioné presupuesto de Q 25 M anuales con cumplimiento de utilidad neta > 105% del objetivo durante 10 años consecutivos.</span>
+                                <p class="text-xl text-purple-600 font-bold mb-6">🛒 Walmart (Paiz y Despensa Familiar)</p>
+                                <ul class="space-y-4 text-gray-700">
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-green-600">💰 Gestioné presupuesto de Q 25M anuales</span> con cumplimiento de utilidad neta <span class="font-bold text-green-600">> 105% del objetivo</span> durante <span class="font-bold">10 años consecutivos</span>.</span>
                                     </li>
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Lideré proyecto de organización de vientomanía de electrodomésticos, incrementando ventas de la categoría en 400%.</span>
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-blue-600">🎯 Lideré proyecto de organización de vientomanía de electrodomésticos</span>, incrementando ventas de la categoría en <span class="font-bold text-green-600">400%</span>.</span>
                                     </li>
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>5 años de experiencia en el área de resurtido, logrando un instock del 90%, días de inventario de 20, faltantes de mercadería del 10%, cumplimiento de órdenes de compra a proveedores del 95% y devoluciones del 95%. Negociación con proveedores para realizar desayunos familiares, incrementando ventas y fidelización de clientes.</span>
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-orange-600">📦 5 años de experiencia en el área de resurtido</span>, logrando un <span class="font-bold">instock del 90%</span>, días de inventario de <span class="font-bold">20</span>, faltantes de mercadería del <span class="font-bold">10%</span>, cumplimiento de órdenes de compra a proveedores del <span class="font-bold">95%</span> y devoluciones del <span class="font-bold">95%</span>. Negociación con proveedores para realizar desayunos familiares, incrementando ventas y fidelización de clientes.</span>
                                     </li>
-                                    <li class="flex items-start space-x-3">
-                                        <span class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
-                                        <span>Implementé programa de servicio al cliente que elevó NPS de 63 → 82 puntos en 12 meses</span>
+                                    <li class="flex items-start space-x-4">
+                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-indigo-600">🌟 Implementé programa de servicio al cliente</span> que elevó NPS de <span class="text-orange-500 font-bold">63 → 82 puntos</span> en <span class="font-bold">12 meses</span>.</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Education Section -->
-                    <div class="print-break-inside-avoid section-card rounded-xl p-6 mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="w-2 h-8 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
-                            <h3 class="text-2xl font-bold gradient-text">Educación</h3>
+                    <!-- =======================================
+                         SECCIÓN DE EDUCACIÓN
+                         ======================================= -->
+                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-green-500">
+                        <div class="flex items-center mb-6">
+                            <div class="w-3 h-10 bg-gradient-to-b from-green-500 to-emerald-600 rounded-full mr-4"></div>
+                            <h3 class="text-3xl font-extrabold gradient-text">🎓 Educación</h3>
                         </div>
-                        <div class="section-divider mb-6"></div>
+                        <div class="section-divider mb-8"></div>
                         <div class="space-y-6">
-                            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-400">
-                                <h4 class="text-xl font-semibold text-gray-800 mb-2">MBA – Administración de Negocios</h4>
-                                <p class="text-lg text-gray-600 font-medium">Universidad Galileo</p>
-                                <span class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium mt-2">Graduado Julio 2025</span>
+                            <!-- MBA -->
+                            <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border-l-4 border-emerald-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-2xl">🎯</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="text-2xl font-bold text-gray-800 mb-3">MBA – Administración de Negocios</h4>
+                                        <p class="text-xl text-emerald-600 font-bold mb-4">🏛️ Universidad Galileo</p>
+                                        <span class="modern-badge bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                            ✅ Graduado Julio 2025
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-6 border-l-4 border-cyan-400">
-                                <h4 class="text-xl font-semibold text-gray-800 mb-2">Licenciatura en Informática y Administración</h4>
-                                <p class="text-lg text-gray-600 font-medium">Universidad Galileo</p>
-                                <span class="inline-block bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium mt-2">Graduado Abril 2025</span>
+                            
+                            <!-- Licenciatura -->
+                            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-2xl">💻</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="text-2xl font-bold text-gray-800 mb-3">Licenciatura en Informática y Administración</h4>
+                                        <p class="text-xl text-blue-600 font-bold mb-4">🏛️ Universidad Galileo</p>
+                                        <span class="modern-badge bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                            ✅ Graduado Abril 2025
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Certifications & Recognitions Section -->
-                    <div class="print-break-inside-avoid section-card rounded-xl p-6 mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="w-2 h-8 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
-                            <h3 class="text-2xl font-bold gradient-text">Certificaciones y Reconocimientos</h3>
+                    <!-- =======================================
+                         CERTIFICACIONES Y RECONOCIMIENTOS
+                         ======================================= -->
+                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-yellow-500">
+                        <div class="flex items-center mb-6">
+                            <div class="w-3 h-10 bg-gradient-to-b from-yellow-500 to-orange-600 rounded-full mr-4"></div>
+                            <h3 class="text-3xl font-extrabold gradient-text">🏆 Certificaciones y Reconocimientos</h3>
                         </div>
-                        <div class="section-divider mb-6"></div>
-                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border-l-4 border-yellow-400">
-                            <h4 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                                <svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                Reconocimientos
+                        <div class="section-divider mb-8"></div>
+                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 border-l-4 border-yellow-500 shadow-lg">
+                            <h4 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                                <div class="icon-container w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mr-4 shadow-lg">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                🌟 Reconocimientos Destacados
                             </h4>
-                            <div class="grid gap-3">
-                                <div class="flex items-center space-x-3">
-                                    <span class="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0"></span>
-                                    <span class="text-gray-700">Becario del Gobierno de Guatemala – Excelencia académica (1999)</span>
+                            <div class="grid gap-6">
+                                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-yellow-400">
+                                    <div class="flex items-center space-x-4">
+                                        <span class="w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex-shrink-0 shadow-md"></span>
+                                        <div>
+                                            <p class="text-gray-800 font-bold text-lg">🎓 Becario del Gobierno de Guatemala</p>
+                                            <p class="text-yellow-600 font-semibold">Excelencia Académica (1999)</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex items-center space-x-3">
-                                    <span class="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0"></span>
-                                    <span class="text-gray-700">Mención honorífica "Líder de Operaciones", Walmart Centroamérica (2015)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Referencias Profesionales -->
-                    <div class="print-break-inside-avoid section-card rounded-xl p-6 mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="w-2 h-8 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
-                            <h3 class="text-2xl font-bold gradient-text">Referencias Profesionales</h3>
-                        </div>
-                        <div class="section-divider mb-6"></div>
-                        <div class="grid gap-6">
-                            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border-l-4 border-blue-400">
-                                <p class="font-semibold text-gray-800 text-lg mb-2">Roberto Pozuelos</p>
-                                <p class="text-gray-600 mb-2">Gerente de distrito Wal-Mart</p>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                                    </svg>
-                                    <span class="text-gray-700">59513520</span>
-                                </div>
-                            </div>
-                            <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 border-l-4 border-purple-400">
-                                <p class="font-semibold text-gray-800 text-lg mb-2">Sergio Laparra</p>
-                                <p class="text-gray-600 mb-2">Gerente de Distrito Suma</p>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-4 h-4 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                                    </svg>
-                                    <span class="text-gray-700">42175263</span>
-                                </div>
-                            </div>
-                            <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 border-l-4 border-green-400">
-                                <p class="font-semibold text-gray-800 text-lg mb-2">Jesús Juárez</p>
-                                <p class="text-gray-600 mb-2">Sub-Administrador Despensa Familiar Coatepeque</p>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                                    </svg>
-                                    <span class="text-gray-700">55324635</span>
+                                <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-orange-400">
+                                    <div class="flex items-center space-x-4">
+                                        <span class="w-4 h-4 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex-shrink-0 shadow-md"></span>
+                                        <div>
+                                            <p class="text-gray-800 font-bold text-lg">🏅 Mención Honorífica "Líder de Operaciones"</p>
+                                            <p class="text-orange-600 font-semibold">Walmart Centroamérica (2015)</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Referencias Personales -->
-                    <div class="print-break-inside-avoid section-card rounded-xl p-6 mb-8">
-                        <div class="flex items-center mb-4">
-                            <div class="w-2 h-8 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
-                            <h3 class="text-2xl font-bold gradient-text">Referencias Personales</h3>
+                    <!-- =======================================
+                         REFERENCIAS PROFESIONALES
+                         ======================================= -->
+                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-indigo-500">
+                        <div class="flex items-center mb-6">
+                            <div class="w-3 h-10 bg-gradient-to-b from-indigo-500 to-purple-600 rounded-full mr-4"></div>
+                            <h3 class="text-3xl font-extrabold gradient-text">👔 Referencias Profesionales</h3>
                         </div>
-                        <div class="section-divider mb-6"></div>
+                        <div class="section-divider mb-8"></div>
                         <div class="grid gap-6">
-                            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6 border-l-4 border-indigo-400">
-                                <p class="font-semibold text-gray-800 text-lg mb-2">Luis Velásquez</p>
-                                <p class="text-gray-600 mb-2">Gerente Construfacil Huehuetenango</p>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-4 h-4 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                                    </svg>
-                                    <span class="text-gray-700">30110521</span>
+                            <!-- Referencia 1 -->
+                            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 border-l-4 border-blue-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">👨‍💼</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-gray-800 text-xl mb-2">Roberto Pozuelos</p>
+                                        <p class="text-blue-600 font-semibold mb-3">🏢 Gerente de distrito Wal-Mart</p>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="icon-container w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                                </svg>
+                                            </div>
+                                            <span class="text-gray-700 font-semibold">📞 59513520</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="bg-gradient-to-r from-pink-50 to-red-50 rounded-xl p-6 border-l-4 border-pink-400">
-                                <p class="font-semibold text-gray-800 text-lg mb-2">Paula Velásquez</p>
-                                <p class="text-gray-600 mb-2">Gerente Super del Barrio Pajapita SM</p>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                                    </svg>
-                                    <span class="text-gray-700">54135856</span>
+                            
+                            <!-- Referencia 2 -->
+                            <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 border-l-4 border-purple-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">👨‍💼</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-gray-800 text-xl mb-2">Sergio Laparra</p>
+                                        <p class="text-purple-600 font-semibold mb-3">🏢 Gerente de Distrito Suma</p>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="icon-container w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                                </svg>
+                                            </div>
+                                            <span class="text-gray-700 font-semibold">📞 42175263</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl p-6 border-l-4 border-teal-400">
-                                <p class="font-semibold text-gray-800 text-lg mb-2">Jesús Juárez</p>
-                                <p class="text-gray-600 mb-2">Sub-Administrador Despensa Familiar Coatepeque</p>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-4 h-4 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                                    </svg>
-                                    <span class="text-gray-700">55324635</span>
+                            
+                            <!-- Referencia 3 -->
+                            <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border-l-4 border-green-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-14 h-14 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">👨‍💼</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-gray-800 text-xl mb-2">Jesús Juárez</p>
+                                        <p class="text-green-600 font-semibold mb-3">🏢 Sub-Administrador Despensa Familiar Coatepeque</p>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="icon-container w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                                </svg>
+                                            </div>
+                                            <span class="text-gray-700 font-semibold">📞 55324635</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- =======================================
+                         REFERENCIAS PERSONALES
+                         ======================================= -->
+                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-pink-500">
+                        <div class="flex items-center mb-6">
+                            <div class="w-3 h-10 bg-gradient-to-b from-pink-500 to-rose-600 rounded-full mr-4"></div>
+                            <h3 class="text-3xl font-extrabold gradient-text">👥 Referencias Personales</h3>
+                        </div>
+                        <div class="section-divider mb-8"></div>
+                        <div class="grid gap-6">
+                            <!-- Referencia Personal 1 -->
+                            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border-l-4 border-indigo-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-14 h-14 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">👤</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-gray-800 text-xl mb-2">Luis Velásquez</p>
+                                        <p class="text-indigo-600 font-semibold mb-3">🏗️ Gerente Construfacil Huehuetenango</p>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="icon-container w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                                </svg>
+                                            </div>
+                                            <span class="text-gray-700 font-semibold">📞 30110521</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Referencia Personal 2 -->
+                            <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-6 border-l-4 border-pink-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-14 h-14 bg-gradient-to-r from-pink-500 to-rose-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">👤</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-gray-800 text-xl mb-2">Paula Velásquez</p>
+                                        <p class="text-pink-600 font-semibold mb-3">🏪 Gerente Super del Barrio Pajapita SM</p>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="icon-container w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                                </svg>
+                                            </div>
+                                            <span class="text-gray-700 font-semibold">📞 54135856</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Referencia Personal 3 -->
+                            <div class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-6 border-l-4 border-teal-500 shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="icon-container w-14 h-14 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">👤</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="font-bold text-gray-800 text-xl mb-2">Jesús Juárez</p>
+                                        <p class="text-teal-600 font-semibold mb-3">🏢 Sub-Administrador Despensa Familiar Coatepeque</p>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="icon-container w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
+                                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                                </svg>
+                                            </div>
+                                            <span class="text-gray-700 font-semibold">📞 55324635</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
