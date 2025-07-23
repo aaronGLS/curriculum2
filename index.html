@@ -18,6 +18,14 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <<body class="min-h-screen">
+    <!-- Botón flotante de descarga PDF -->
+    <button id="downloadBtn" class="download-btn pulse" onclick="downloadPDF()" title="Descargar CV en PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        <span>Descargar PDF</span>
+    </button>
+
     <!-- Contenedor principal del CV -->
     <div class="container mx-auto max-w-7xl p-4 sm:p-8">
         <!-- Tarjeta principal del CV con efectos modernos -->
@@ -328,5 +336,71 @@
             </div>
         </div>
     </div>
+
+    <!-- =======================================
+         SCRIPT PARA DESCARGA DIRECTA DE PDF
+         ======================================= -->
+    <script>
+        // Función para descargar el CV desde archivo local
+        function downloadPDF() {
+            const btn = document.getElementById('downloadBtn');
+            const originalContent = btn.innerHTML;
+            
+            // Mostrar indicador de descarga
+            btn.innerHTML = `
+                <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Descargando...</span>
+            `;
+            btn.disabled = true;
+            btn.classList.remove('pulse');
+            
+            // Crear enlace temporal para descargar el PDF existente
+            const link = document.createElement('a');
+            link.href = 'assets/curriculum.pdf';
+            link.download = 'CV_Gerson_Aaron_Lopez_Perez.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Mostrar feedback de éxito
+            setTimeout(() => {
+                btn.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>¡Descargado!</span>
+                `;
+                btn.disabled = false;
+                
+                // Volver al estado original después de 2 segundos
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.classList.add('pulse');
+                }, 2000);
+            }, 800);
+        }
+        
+        // Agregar efecto de hover mejorado
+        document.getElementById('downloadBtn').addEventListener('mouseenter', function() {
+            this.classList.remove('pulse');
+        });
+        
+        document.getElementById('downloadBtn').addEventListener('mouseleave', function() {
+            if (!this.disabled) {
+                this.classList.add('pulse');
+            }
+        });
+        
+        // Quitar la animación de pulso después de 10 segundos para no distraer
+        setTimeout(() => {
+            const btn = document.getElementById('downloadBtn');
+            if (btn) {
+                btn.classList.remove('pulse');
+            }
+        }, 10000);
+    </script>
 </body>
 </html>
