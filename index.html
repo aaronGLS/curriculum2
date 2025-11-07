@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Meta tags esenciales -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Gerson Aarón López Pérez - Gerente de Operaciones Retail</title>
-    
+
     <!-- Frameworks y librerías externas -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Preconexiones para optimización de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Hoja de estilos personalizada -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
-<<body class="min-h-screen">
+
+<body class="min-h-screen">
     <!-- Botón flotante de descarga PDF -->
-    <button id="downloadBtn" class="download-btn pulse" onclick="downloadPDF()" title="Descargar CV en PDF">
+    <button id="downloadBtn" class="download-btn pulse" onclick="downloadPDF()" title="Descargar CV en PDF"
+        aria-label="Descargar CV en PDF">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
         <span>Descargar PDF</span>
     </button>
@@ -37,18 +41,19 @@
                 <div class="lg:w-1/3 left-column text-white p-8 relative">
                     <div class="relative z-10">
                         <!-- Sección de perfil personal -->
-                        <div class="flex flex-col items-center lg:items-start mb-8">
+                        <div class="flex flex-col items-center mb-8">
                             <!-- Imagen de perfil con efectos modernos y alineación perfecta -->
                             <div class="profile-image w-40 h-40 rounded-full mb-6 overflow-hidden mx-auto lg:mx-0">
-                                <img src="assets/foto.png" alt="Foto profesional de Gerson Aarón López Pérez" 
-                                     class="w-full h-full object-cover object-center transition-transform duration-300" />
+                                <img src="assets/foto.png" alt="Foto profesional de Gerson Aarón López Pérez"
+                                    class="w-full h-full object-cover object-center transition-transform duration-300" />
                             </div>
-                            
+
                             <!-- Nombre y título profesional -->
-                            <h1 class="text-3xl lg:text-4xl font-extrabold text-center lg:text-left mb-3 title-glow">
+                            <h1 class="text-3xl lg:text-4xl font-extrabold text-center mb-3 title-glow">
                                 GERSON AARÓN LÓPEZ PÉREZ
                             </h1>
-                            <div class="modern-badge bg-gradient-to-r from-cyan-400 to-blue-500 text-gray-900 px-6 py-3 rounded-full text-base font-bold mb-6 shadow-lg">
+                            <div
+                                class="modern-badge bg-gradient-to-r from-cyan-400 to-blue-500 text-gray-900 px-6 py-3 rounded-full text-base font-bold mb-6 shadow-lg">
                                 🏪 Gerente de Operaciones Retail
                             </div>
                         </div>
@@ -64,42 +69,53 @@
                                 <span class="w-8 h-0.5 bg-cyan-400 mr-3 rounded-full"></span>
                                 📞 Contacto
                             </h3>
-                            
+
                             <!-- Información de ubicación -->
                             <div class="contact-item flex items-center space-x-4 p-4">
-                                <div class="icon-container w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                <div
+                                    class="icon-container w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                            clip-rule="evenodd" />
                                     </svg>
                                 </div>
                                 <span class="text-gray-100 font-medium">📍 Coatepeque, Quetzaltenango</span>
                             </div>
-                            
+
                             <!-- Información de teléfono -->
                             <div class="contact-item flex items-center space-x-4 p-4">
-                                <div class="icon-container w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                <div
+                                    class="icon-container w-12 h-12 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.218 5.218l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                                     </svg>
                                 </div>
                                 <span class="text-gray-100 font-medium">📱 +502 5593 2562</span>
                             </div>
-                            
+
                             <!-- Información de email -->
                             <div class="contact-item flex items-center space-x-4 p-4">
-                                <div class="icon-container w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <div
+                                    class="icon-container w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                     </svg>
                                 </div>
-                                <span class="text-gray-100 font-medium break-all">✉️ gersonlopezpaizhuehue@hotmail.com</span>
+                                <span class="text-gray-100 font-medium break-all">✉️
+                                    gersonlopezpaizhuehue@hotmail.com</span>
                             </div>
                         </div>
 
                         <!-- Separador decorativo con animación -->
                         <div class="h-px bg-gradient-to-r from-transparent via-white to-transparent my-8"></div>
-                        
+
                         <!-- =======================================
                              SECCIÓN DE COMPETENCIAS CLAVE
                              ======================================= -->
@@ -109,24 +125,42 @@
                                 🚀 Competencias Clave
                             </h3>
                             <div class="grid grid-cols-1 gap-4">
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">💰 Gestión de P&L</div>
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">🏪 Retail / ERP</div>
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">🛍️ Merchandising & Layout</div>
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">📦 Gestión de Inventarios</div>
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">📊 Análisis de Datos</div>
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">📈 Excel Avanzado</div>
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">👥 Liderazgo y Coaching</div>
-                                <div class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">🤝 Negociación con Proveedores</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    💰 Gestión de P&L</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    🏪 Retail / ERP</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    🛍️ Merchandising & Layout</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    📦 Gestión de Inventarios</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    📊 Análisis de Datos</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    📈 Excel Avanzado</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    👥 Liderazgo y Coaching</div>
+                                <div
+                                    class="skill-badge text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg">
+                                    🤝 Negociación con Proveedores</div>
                             </div>
 
                             <!-- =======================================
                                  SECCIÓN DE FORTALEZAS
                                  ======================================= -->
-                            <h3 class="text-xl font-bold text-cyan-300 uppercase tracking-wider mt-10 mb-6 flex items-center">
+                            <h3
+                                class="text-xl font-bold text-cyan-300 uppercase tracking-wider mt-10 mb-6 flex items-center">
                                 <span class="w-8 h-0.5 bg-cyan-400 mr-3 rounded-full"></span>
                                 💪 Fortalezas
                             </h3>
-                            <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-filter backdrop-blur-lg border border-white border-opacity-20">
+                            <div
+                                class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-filter backdrop-blur-lg border border-white border-opacity-20">
                                 <ul class="space-y-3 text-white text-base">
                                     <li class="flex items-center space-x-3">
                                         <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
@@ -147,7 +181,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <!-- Separador decorativo con animación -->
                         <div class="h-px bg-gradient-to-r from-transparent via-white to-transparent my-8"></div>
 
@@ -159,7 +193,8 @@
                                 <span class="w-8 h-0.5 bg-cyan-400 mr-3 rounded-full"></span>
                                 🌍 Idiomas
                             </h3>
-                            <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-filter backdrop-blur-lg border border-white border-opacity-20">
+                            <div
+                                class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-filter backdrop-blur-lg border border-white border-opacity-20">
                                 <div class="flex items-center space-x-3">
                                     <span class="text-2xl">🇬🇹</span>
                                     <div>
@@ -185,13 +220,21 @@
                             <h3 class="text-3xl font-extrabold gradient-text">📋 Resumen Ejecutivo</h3>
                         </div>
                         <div class="section-divider mb-6"></div>
-                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border-l-4 border-blue-400">
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border-l-4 border-blue-400">
                             <p class="text-gray-700 leading-relaxed text-lg font-medium">
-                                <span class="font-bold text-blue-600">💼 Profesional del sector retail</span> con <span class="font-bold text-purple-600">22 años de experiencia</span> 
-                                gestionando tiendas de los formatos <span class="font-semibold">Walmart (Paiz y Despensa Familiar)</span> y <span class="font-semibold">GTA (Super del barrio y supermercados Suma)</span>. 
-                                <span class="font-bold text-green-600">🎯 Experto en apertura de puntos de venta</span>, liderazgo de equipos de hasta <span class="font-bold">120 personas</span>, 
-                                control de P&L y mejora continua. Ha logrado <span class="font-bold text-emerald-600">incrementos de utilidad neta superiores al 12% anual</span> 
-                                y <span class="font-bold text-orange-600">reducción de merma del 18%</span> mediante análisis de inventario y capacitación de personal.
+                                <span class="font-bold text-blue-600">💼 Profesional del sector retail</span> con <span
+                                    class="font-bold text-purple-600">22 años de experiencia</span>
+                                gestionando tiendas de los formatos <span class="font-semibold">Walmart (Paiz y Despensa
+                                    Familiar)</span> y <span class="font-semibold">GTA (Super del barrio y supermercados
+                                    Suma)</span>.
+                                <span class="font-bold text-green-600">🎯 Experto en apertura de puntos de venta</span>,
+                                liderazgo de equipos de hasta <span class="font-bold">120 personas</span>,
+                                control de P&L y mejora continua. Ha logrado <span
+                                    class="font-bold text-emerald-600">incrementos de utilidad neta superiores al 12%
+                                    anual</span>
+                                y <span class="font-bold text-orange-600">reducción de merma del 18%</span> mediante
+                                análisis de inventario y capacitación de personal.
                             </p>
                         </div>
                     </div>
@@ -199,7 +242,8 @@
                     <!-- =======================================
                          SECCIÓN DE EXPERIENCIA PROFESIONAL
                          ======================================= -->
-                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-purple-500">
+                    <div
+                        class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-purple-500">
                         <div class="flex items-center mb-6">
                             <div class="w-3 h-10 bg-gradient-to-b from-purple-500 to-pink-600 rounded-full mr-4"></div>
                             <h3 class="text-3xl font-extrabold gradient-text">💼 Experiencia Profesional</h3>
@@ -207,63 +251,110 @@
                         <div class="section-divider mb-8"></div>
                         <div class="space-y-8">
                             <!-- Trabajo 1 - GTA -->
-                            <div class="job-card bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 border-l-4 border-cyan-500 shadow-lg">
+                            <div
+                                class="job-card bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 border-l-4 border-cyan-500 shadow-lg">
                                 <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4">
                                     <h4 class="text-2xl font-bold text-gray-800 mb-2 lg:mb-0">🏢 Sub-Gerente</h4>
-                                    <span class="modern-badge bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                    <span
+                                        class="modern-badge bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                                         📅 2020 - 2024
                                     </span>
                                 </div>
-                                <p class="text-xl text-blue-600 font-bold mb-6">🏪 GTA (supermercados Suma y super del barrio)</p>
+                                <p class="text-xl text-blue-600 font-bold mb-6">🏪 GTA (supermercados Suma y super del
+                                    barrio)</p>
                                 <ul class="space-y-4 text-gray-700">
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-green-600">🎯 Aperturé la tienda SDB San Francisco Coatepeque</span> alcanzando ventas de <span class="font-bold">Q 2M en el primer trimestre</span> (<span class="text-green-600 font-bold">8% sobre meta</span>).</span>
+                                        <span
+                                            class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-green-600">🎯 Aperturé la
+                                                tienda SDB San Francisco Coatepeque</span> alcanzando ventas de <span
+                                                class="font-bold">Q 2M en el primer trimestre</span> (<span
+                                                class="text-green-600 font-bold">8% sobre meta</span>).</span>
                                     </li>
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-blue-600">🏗️ Aperturé Suma Huehuetenango</span> superando los presupuestos de venta <span class="font-bold text-green-600">arriba del 15% mensual</span> durante <span class="font-bold">2 años consecutivos</span>. Alcanzando ventas de más de <span class="font-bold">Q 15M mensual</span>.</span>
+                                        <span
+                                            class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-blue-600">🏗️ Aperturé
+                                                Suma Huehuetenango</span> superando los presupuestos de venta <span
+                                                class="font-bold text-green-600">arriba del 15% mensual</span> durante
+                                            <span class="font-bold">2 años consecutivos</span>. Alcanzando ventas de más
+                                            de <span class="font-bold">Q 15M mensual</span>.</span>
                                     </li>
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-purple-600">🚀 Aperturé Suma Coatepeque</span>, logrando ventas mensuales de <span class="font-bold">Q 10 millones</span> y superando el presupuesto en un <span class="font-bold text-green-600">10%</span>.</span>
+                                        <span
+                                            class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-purple-600">🚀 Aperturé
+                                                Suma Coatepeque</span>, logrando ventas mensuales de <span
+                                                class="font-bold">Q 10 millones</span> y superando el presupuesto en un
+                                            <span class="font-bold text-green-600">10%</span>.</span>
                                     </li>
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-orange-600">📉 Reduje merma total en 18%</span> mediante implementación de <span class="font-bold">sistema PEPS</span> y capacitaciones mensuales.</span>
+                                        <span
+                                            class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-orange-600">📉 Reduje
+                                                merma total en 18%</span> mediante implementación de <span
+                                                class="font-bold">sistema PEPS</span> y capacitaciones mensuales.</span>
                                     </li>
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-indigo-600">👥 Coordiné equipo de 80 colaboradores</span>, bajando la rotación de <span class="text-red-500 font-bold">15% a 6% anual</span>.</span>
+                                        <span
+                                            class="w-3 h-3 bg-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-indigo-600">👥 Coordiné
+                                                equipo de 80 colaboradores</span>, bajando la rotación de <span
+                                                class="text-red-500 font-bold">15% a 6% anual</span>.</span>
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <!-- Trabajo 2 - Walmart -->
-                            <div class="job-card bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border-l-4 border-purple-500 shadow-lg">
+                            <div
+                                class="job-card bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border-l-4 border-purple-500 shadow-lg">
                                 <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4">
-                                    <h4 class="text-2xl font-bold text-gray-800 mb-2 lg:mb-0">🏢 Administrador de Tienda</h4>
-                                    <span class="modern-badge bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                    <h4 class="text-2xl font-bold text-gray-800 mb-2 lg:mb-0">🏢 Administrador de Tienda
+                                    </h4>
+                                    <span
+                                        class="modern-badge bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                                         📅 2000 - 2019
                                     </span>
                                 </div>
-                                <p class="text-xl text-purple-600 font-bold mb-6">🛒 Walmart (Paiz y Despensa Familiar)</p>
+                                <p class="text-xl text-purple-600 font-bold mb-6">🛒 Walmart (Paiz y Despensa Familiar)
+                                </p>
                                 <ul class="space-y-4 text-gray-700">
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-green-600">💰 Gestioné presupuesto de Q 25M anuales</span> con cumplimiento de utilidad neta <span class="font-bold text-green-600">> 105% del objetivo</span> durante <span class="font-bold">10 años consecutivos</span>.</span>
+                                        <span
+                                            class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-green-600">💰 Gestioné
+                                                presupuesto de Q 25M anuales</span> con cumplimiento de utilidad neta
+                                            <span class="font-bold text-green-600">> 105% del objetivo</span> durante
+                                            <span class="font-bold">10 años consecutivos</span>.</span>
                                     </li>
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-blue-600">🎯 Lideré proyecto de organización de vientomanía de electrodomésticos</span>, incrementando ventas de la categoría en <span class="font-bold text-green-600">400%</span>.</span>
+                                        <span
+                                            class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-blue-600">🎯 Lideré
+                                                proyecto de organización de vientomanía de electrodomésticos</span>,
+                                            incrementando ventas de la categoría en <span
+                                                class="font-bold text-green-600">400%</span>.</span>
                                     </li>
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-orange-600">📦 5 años de experiencia en el área de resurtido</span>, logrando un <span class="font-bold">instock del 90%</span>, días de inventario de <span class="font-bold">20</span>, faltantes de mercadería del <span class="font-bold">10%</span>, cumplimiento de órdenes de compra a proveedores del <span class="font-bold">95%</span> y devoluciones del <span class="font-bold">95%</span>. Negociación con proveedores para realizar desayunos familiares, incrementando ventas y fidelización de clientes.</span>
+                                        <span
+                                            class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-orange-600">📦 5 años de
+                                                experiencia en el área de resurtido</span>, logrando un <span
+                                                class="font-bold">instock del 90%</span>, días de inventario de <span
+                                                class="font-bold">20</span>, faltantes de mercadería del <span
+                                                class="font-bold">10%</span>, cumplimiento de órdenes de compra a
+                                            proveedores del <span class="font-bold">95%</span> y devoluciones del <span
+                                                class="font-bold">95%</span>. Negociación con proveedores para realizar
+                                            desayunos familiares, incrementando ventas y fidelización de
+                                            clientes.</span>
                                     </li>
                                     <li class="flex items-start space-x-4">
-                                        <span class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
-                                        <span class="font-medium"><span class="font-bold text-indigo-600">🌟 Implementé programa de servicio al cliente</span> que elevó NPS de <span class="text-orange-500 font-bold">63 → 82 puntos</span> en <span class="font-bold">12 meses</span>.</span>
+                                        <span
+                                            class="w-3 h-3 bg-purple-500 rounded-full mt-2 flex-shrink-0 shadow-md"></span>
+                                        <span class="font-medium"><span class="font-bold text-indigo-600">🌟 Implementé
+                                                programa de servicio al cliente</span> que elevó NPS de <span
+                                                class="text-orange-500 font-bold">63 → 82 puntos</span> en <span
+                                                class="font-bold">12 meses</span>.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -275,37 +366,46 @@
                          ======================================= -->
                     <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-green-500">
                         <div class="flex items-center mb-6">
-                            <div class="w-3 h-10 bg-gradient-to-b from-green-500 to-emerald-600 rounded-full mr-4"></div>
+                            <div class="w-3 h-10 bg-gradient-to-b from-green-500 to-emerald-600 rounded-full mr-4">
+                            </div>
                             <h3 class="text-3xl font-extrabold gradient-text">🎓 Educación</h3>
                         </div>
                         <div class="section-divider mb-8"></div>
                         <div class="space-y-6">
                             <!-- MBA -->
-                            <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border-l-4 border-emerald-500 shadow-lg">
+                            <div
+                                class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border-l-4 border-emerald-500 shadow-lg">
                                 <div class="flex items-start space-x-4">
-                                    <div class="icon-container w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
+                                    <div
+                                        class="icon-container w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
                                         <span class="text-2xl">🎯</span>
                                     </div>
                                     <div class="flex-1">
-                                        <h4 class="text-2xl font-bold text-gray-800 mb-3">MBA – Administración de Negocios</h4>
+                                        <h4 class="text-2xl font-bold text-gray-800 mb-3">MBA – Administración de
+                                            Negocios</h4>
                                         <p class="text-xl text-emerald-600 font-bold mb-4">🏛️ Universidad Galileo</p>
-                                        <span class="modern-badge bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                        <span
+                                            class="modern-badge bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                                             ✅ Graduado Julio 2025
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Licenciatura -->
-                            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-500 shadow-lg">
+                            <div
+                                class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-500 shadow-lg">
                                 <div class="flex items-start space-x-4">
-                                    <div class="icon-container w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                                    <div
+                                        class="icon-container w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
                                         <span class="text-2xl">💻</span>
                                     </div>
                                     <div class="flex-1">
-                                        <h4 class="text-2xl font-bold text-gray-800 mb-3">Licenciatura en Informática y Administración</h4>
+                                        <h4 class="text-2xl font-bold text-gray-800 mb-3">Licenciatura en Informática y
+                                            Administración</h4>
                                         <p class="text-xl text-blue-600 font-bold mb-4">🏛️ Universidad Galileo</p>
-                                        <span class="modern-badge bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                        <span
+                                            class="modern-badge bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                                             ✅ Graduado Abril 2025
                                         </span>
                                     </div>
@@ -313,23 +413,28 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- =======================================
                          REFERENCIAS PROFESIONALES
                          ======================================= -->
-                    <div class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-indigo-500">
+                    <div
+                        class="print-break-inside-avoid section-card rounded-2xl p-8 mb-8 border-l-4 border-indigo-500">
                         <div class="flex items-center mb-6">
-                            <div class="w-3 h-10 bg-gradient-to-b from-indigo-500 to-purple-600 rounded-full mr-4"></div>
+                            <div class="w-3 h-10 bg-gradient-to-b from-indigo-500 to-purple-600 rounded-full mr-4">
+                            </div>
                             <h3 class="text-3xl font-extrabold gradient-text">👔 Referencias</h3>
                         </div>
                         <div class="section-divider mb-8"></div>
-                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-500 shadow-lg text-center">
-                            <div class="icon-container w-20 h-20 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg mx-auto mb-6">
+                        <div
+                            class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-500 shadow-lg text-center">
+                            <div
+                                class="icon-container w-20 h-20 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg mx-auto mb-6">
                                 <span class="text-3xl">📋</span>
                             </div>
                             <h4 class="text-2xl font-bold text-gray-800 mb-4">Referencias Profesionales</h4>
                             <p class="text-xl text-blue-600 font-semibold">Disponibles a solicitud</p>
-                            <p class="text-gray-600 mt-3">Se proporcionarán referencias detalladas durante el proceso de selección</p>
+                            <p class="text-gray-600 mt-3">Se proporcionarán referencias detalladas durante el proceso de
+                                selección</p>
                         </div>
                     </div>
                 </div>
@@ -345,7 +450,7 @@
         function downloadPDF() {
             const btn = document.getElementById('downloadBtn');
             const originalContent = btn.innerHTML;
-            
+
             // Mostrar indicador de descarga
             btn.innerHTML = `
                 <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -356,7 +461,7 @@
             `;
             btn.disabled = true;
             btn.classList.remove('pulse');
-            
+
             // Crear enlace temporal para descargar el PDF existente
             const link = document.createElement('a');
             link.href = 'assets/curriculum.pdf';
@@ -364,7 +469,7 @@
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            
+
             // Mostrar feedback de éxito
             setTimeout(() => {
                 btn.innerHTML = `
@@ -374,7 +479,7 @@
                     <span>¡Descargado!</span>
                 `;
                 btn.disabled = false;
-                
+
                 // Volver al estado original después de 2 segundos
                 setTimeout(() => {
                     btn.innerHTML = originalContent;
@@ -382,18 +487,28 @@
                 }, 2000);
             }, 800);
         }
-        
-        // Agregar efecto de hover mejorado
-        document.getElementById('downloadBtn').addEventListener('mouseenter', function() {
+
+        // Agregar efecto de hover mejorado y soporte de teclado (focus)
+        document.getElementById('downloadBtn').addEventListener('mouseenter', function () {
             this.classList.remove('pulse');
         });
-        
-        document.getElementById('downloadBtn').addEventListener('mouseleave', function() {
+
+        document.getElementById('downloadBtn').addEventListener('mouseleave', function () {
             if (!this.disabled) {
                 this.classList.add('pulse');
             }
         });
-        
+
+        // Equivalentes para usuarios de teclado
+        document.getElementById('downloadBtn').addEventListener('focus', function () {
+            this.classList.remove('pulse');
+        });
+        document.getElementById('downloadBtn').addEventListener('blur', function () {
+            if (!this.disabled) {
+                this.classList.add('pulse');
+            }
+        });
+
         // Quitar la animación de pulso después de 10 segundos para no distraer
         setTimeout(() => {
             const btn = document.getElementById('downloadBtn');
@@ -403,4 +518,5 @@
         }, 10000);
     </script>
 </body>
+
 </html>
